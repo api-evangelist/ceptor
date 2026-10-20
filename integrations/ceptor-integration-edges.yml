@@ -1,0 +1,18 @@
+generated: '2026-10-19'
+method: none
+source:
+- https://zapier.com/apps/ceptor/integrations
+- https://zapier.com/apps/asseco/integrations
+- https://n8n.io/integrations/ceptor/
+- https://composio.dev/toolkits/ceptor
+- https://monid.ai/tools/ceptor
+checked:
+- https://composio.dev/toolkits/ceptor
+- https://monid.ai/tools/ceptor
+- https://n8n.io/integrations/ceptor/
+- https://zapier.com/apps/asseco/integrations
+- https://zapier.com/apps/ceptor/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []

@@ -1,23 +1,66 @@
 aid: ceptor
+
 name: Asseco
-description: 'Asseco is a company surfaced via the API Evangelist harvest backlog (source: g2-catalog)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Asseco is a European IT solutions provider specializing in banking, insurance, and public sector software. Through its Ceptor platform, it offers API management, access management, and gateway services, enabling secure digital transformation for enterprises. The company focuses on integration, security, and scalable cloud/on‑premise deployments, serving clients across Europe and beyond.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ceptor/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:g2-catalog
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-19 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-19'
+
 modified: '2026-10-19'
+
 tags:
 - Company
-apis: []
+- Banking
+- Insurance
+- PublicSector
+- APIManagement
+- Europe
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/ceptor-vendors.yml
+- type: Hosts
+  url: hosts/ceptor-hosts.yml
+- type: Documentation
+  url: https://docs.ceptor.io/
+- type: DomainSecurity
+  url: security/ceptor-domain-security.yml
 - type: Website
   url: https://ceptor.io/
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-19'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://ceptor.io/
+    status: null
+x-enrichment:
+  date: '2026-10-19'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
