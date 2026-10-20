@@ -55,10 +55,13 @@ hosts:
   - namespace-probe
   - contract-discovery
   - well-known
+  - vendor-detect
   types:
   - Documentation
-  serves: []
+  serves:
+  - cdn
   status: 200
+  vendor: cloudfront
   registrable_domain: ceptor.io
   role: docs
   relation: own
